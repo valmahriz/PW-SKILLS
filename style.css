@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-image: url(images/buil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #62B6B7;
+    padding: 9px;
+}
+
+nav ul li img{
+    border: none;
+    width: 40px;
+    border-radius: 20%;
+}
+
+nav button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-color: #F06292;
+    color: #fff;
+}
+
+nav button:hover{
+    cursor: pointer;
+    background: #62B6B7;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+main h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #FFFBEB;
+}
+
+main p{
+    font-size: 20px;
+    color: #FFFBEB;
+    padding-bottom: 30px;
+}
+
+main button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-color: #F06292;
+    color: #FFFBEB;
+}
+
+main button:hover{
+    cursor: pointer;
+    background: #62B6B7;
+}
