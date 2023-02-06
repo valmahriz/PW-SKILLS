@@ -1,30 +1,29 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
+
 body{
-    background-image: url(images/buil.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf1fd;
 }
-nav{
+
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: black;
-    color: #fff;
+    align-items: center;
+    margin: 0 20px;
 }
 
 nav ul{
     display: flex;
+    gap: 30px;
     align-items: center;
-    gap: 50px;
 }
 
 nav ul li{
@@ -32,65 +31,92 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul li:hover{
-    cursor: pointer;
-    border-radius: 3px;
-    background-color: #62B6B7;
-    padding: 9px;
+nav ul li:nth-child(1){
+    background-color: #00337C;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 10px;
 }
 
-nav ul li img{
-    border: none;
-    width: 40px;
-    border-radius: 20%;
+nav ul li:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #00337C;
+    color: #EEEEEE;
+    padding: 5px 8px;
+}
+
+nav .logo{
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    border: 1px solid black;
+    background-color: #00337C;
 }
 
 nav button{
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 15px;
-    font-weight: 500;
-    border-radius: 5px;
-    border: none;
-    background-color: #F06292;
     color: #fff;
+    font-weight: 600;
+    border: none;
+    background-color: #362FD9;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 nav button:hover{
-    cursor: pointer;
-    background: #62B6B7;
+    background-color: #fff;
+    color: #13005A;
+    border: 1px solid black;
 }
 
-main{
+.main{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    justify-content: space-around;
+    margin: 70px 30px;
 }
 
-main h1{
-    font-size: 4rem;
-    text-align: center;
-    color: #FFFBEB;
+.left-main h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-main p{
-    font-size: 20px;
-    color: #FFFBEB;
-    padding-bottom: 30px;
+.left-main p{
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
-main button{
-    padding: 10px 20px;
+.right-main{
+    width: 60%;
+}
+
+.right-main img{
+    width: 450px;
+    border-radius: 20px;
+}
+
+.left-main button{
+    padding: 10px 15px;
     font-size: 15px;
-    font-weight: 500;
-    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
     border: none;
-    background-color: #F06292;
-    color: #FFFBEB;
+    background-color: #362FD9;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-main button:hover{
-    cursor: pointer;
-    background: #62B6B7;
+.left-main button:hover{
+    background-color: #fff;
+    color: #13005A;
+    border: 1px solid black;
 }
+}
+
